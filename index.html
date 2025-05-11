@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Quiz – Licht & Atome (Fragen 1–4)</title>
+  <title>Quiz – Kapitel 3: Licht und Atome</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
     .container { max-width: 900px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
@@ -24,10 +24,10 @@
 </head>
 <body>
 <div class="container">
-  <h1>Quiz – Licht und Atome (Fragen 1 bis 4)</h1>
+  <h1>Quiz – Kapitel 3: Licht und Atome (Fragen 1 bis 9)</h1>
 
     <div class="task">
-      <strong>Frage 1:</strong><br>1. Gib mithilfe von Bild B3, Seite 71, den Farbbereich an, zu dem Photonen mit diesen Energiewerten gehören:<br>a) 2,45 eV<br>b) 3,8 eV<br>c) 0,652 eV<br>d) 1,29·10⁻¹⁹ J<br>e) 416·10⁻²¹ J<br>f) 312·10⁻¹⁷ mJ<br><br><img src='quiz_spektrum_streifen.jpg' alt='Spektrumsbild' style='max-width:100%; margin-top:10px;'><br>
+      <strong>Frage 1:</strong><br>1. Gib mithilfe von Bild B3, Seite 71, den Farbbereich an, zu dem Photonen mit diesen Energiewerten gehören:<br>a) 2,45 eV<br>b) 3,8 eV<br>c) 0,652 eV<br>d) 1,29·10⁻¹⁹ J<br>e) 416·10⁻²¹ J<br>f) 312·10⁻¹⁷ mJ<br><br><img src='quiz_spektrum_streifen.jpg' alt='Spektrumsbild' style='max-width:100%; margin-top:10px;'><br><img src='lichtspektrum_aus_pdf.png' alt='Lichtspektrum' style='max-width:100%; margin-top:10px;'><br>
       <textarea placeholder="Antwort eingeben..."></textarea><br>
       <button onclick="show(1, `a) 2,45 eV → grün
 b) 3,8 eV → ultraviolett
@@ -71,5 +71,53 @@ c) Weißes Licht durch Flamme → Absorptionslinien entstehen`, 'feedback')">Lö
       <button onclick="show(4, `Emission entsteht durch Elektronenrücksprung. Absorption durch Lichtaufnahme bei spezifischen Energien.`, 'hilfe')">Hilfe anzeigen</button>
       <div class="feedback" id="feedback_4"></div>
       <div class="hilfe" id="hilfe_4"></div>
+    </div>
+    
+    <div class="task">
+      <strong>Frage 5:</strong><br>6. Ein fiktives Atom hat die Energieniveaus E₁ = 2,2 eV, E₂ = 4,5 eV, E₃ = 4,8 eV.<br>Beurteile die Aussagen (wahr/falsch + Begründung):<br>a) Eine Spektrallinie ist rot.<br>b) Photonen aus dem blauen Spektralbereich können absorbiert werden.<br>c) Es gibt Photonen mit der Energie 2,2 eV.<br>d) Es gibt eine Linie im UV-Bereich.<br>e) Es gibt genau eine Linie im IR-Bereich.<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="show(5, `a) falsch – Übergang 4,8→4,5 = 0,3 eV = IR
+b) wahr – Übergang von 2,2 auf 4,5 oder 4,8 liegt bei 2,3–2,6 eV = blau
+c) falsch – 2,2 eV ist ein Niveau, nicht ein Übergang
+d) wahr – 4,8→2,2 = 2,6 eV (Randbereich UV)
+e) falsch – zwei Übergänge im IR möglich: 4,8→4,5 und 4,5→2,2`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(5, `Spektrallinien entstehen durch Energieunterschiede. IR < 1,8 eV, VIS ca. 1,6–3,3 eV, UV > 3,3 eV.`, 'hilfe')">Hilfe anzeigen</button>
+      <div class="feedback" id="feedback_5"></div>
+      <div class="hilfe" id="hilfe_5"></div>
+    </div>
+    
+    <div class="task">
+      <strong>Frage 6:</strong><br>7. Erkläre die Unterschiede zwischen einem kontinuierlichen Spektrum, einem Linienspektrum und einem Absorptionsspektrum.<br>Beschreibe die physikalischen Vorgänge hinter Linien- und Absorptionsspektrum.<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="show(6, `Kontinuierlich: alle Farben – heißer Festkörper
+Linienspektrum: einzelne Linien – Emission angeregter Atome
+Absorptionsspektrum: dunkle Linien im Kontinuum – Energieaufnahme durch Elektronen`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(6, `Emission = Abgabe von Photonen durch Elektronenrückfall. Absorption = Photon wird geschluckt, Elektron steigt.`, 'hilfe')">Hilfe anzeigen</button>
+      <div class="feedback" id="feedback_6"></div>
+      <div class="hilfe" id="hilfe_6"></div>
+    </div>
+    
+    <div class="task">
+      <strong>Frage 7:</strong><br>8. Ein grüner Laser (E = 2,33 eV, 0,7 mW) kann die Netzhaut schädigen:<br>a) Berechne die Anzahl Photonen pro Sekunde.<br>b) Berechne die Energie, die in 0,25 s ausgesendet wird.<br>c) Ist grün gefährlicher als rot bei gleicher Leistung?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="show(7, `a) P = 0,0007 W, E_ph = 2,33 eV = 3,73·10⁻¹⁹ J
+N = P / E_ph = 0,0007 / 3,73e-19 ≈ 1,88·10¹⁵ Photonen/s
+b) E = P·t = 0,0007 W · 0,25 s = 0,000175 J
+c) Ja – grüne Photonen haben mehr Energie → höhere Netzhautbelastung`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(7, `Je kürzer die Wellenlänge (höher die Energie), desto größer das Risiko für Augenschäden.`, 'hilfe')">Hilfe anzeigen</button>
+      <div class="feedback" id="feedback_7"></div>
+      <div class="hilfe" id="hilfe_7"></div>
+    </div>
+    
+    <div class="task">
+      <strong>Frage 8:</strong><br>9. Ein Molekül hat folgende Energieniveaus: 0 eV, 3,85 eV, 5,50 eV, 6,18 eV, 7,82 eV.<br>a) Zeichne ein Energieniveauschema.<br>b) Berechne alle Übergänge und ordne Spektralbereiche zu.<br>c) Skizziere ein Emissionsspektrum.<br>d) Unten: Intensitätsdiagramm (Lichtdurchlässigkeit). Deute den Farbstoff.<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="show(8, `a) Schema mit 5 Niveaus
+b) Übergänge z. B. 7,82–0 = 7,82 eV = UV; 5,5–3,85 = 1,65 eV = IR
+c) Linien bei Übergangsenergien
+d) Wenn Absorption bei 3,85 eV, dann ist dieser Übergang aktiv – Farbstoff absorbiert diese Energie`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(8, `Übergangsenergie = Differenz zweier Niveaus. Ordne nach eV-Bereich (IR/VIS/UV). Das Diagramm zeigt Absorptionslinien.`, 'hilfe')">Hilfe anzeigen</button>
+      <div class="feedback" id="feedback_8"></div>
+      <div class="hilfe" id="hilfe_8"></div>
     </div>
     </div></body></html>
