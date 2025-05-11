@@ -2,14 +2,14 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Quiz – Kapitel 3: Licht und Atome</title>
+  <title>Quiz – Licht & Atome (Fragen 1–4)</title>
   <style>
     body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
-    .container { max-width: 900px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    h1 { color: #333; }
+    .container { max-width: 900px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #2c3e50; }
     .task { margin-bottom: 40px; }
-    textarea { width: 100%; height: 50px; margin-top: 5px; font-size: 14px; }
-    button { margin-top: 5px; margin-right: 8px; padding: 8px 14px; font-size: 14px; cursor: pointer; }
+    textarea { width: 100%; height: 60px; margin-top: 10px; font-size: 14px; }
+    button { margin-top: 10px; margin-right: 10px; padding: 8px 14px; font-size: 14px; }
     .feedback, .hilfe { display: none; margin-top: 10px; padding: 12px; border-radius: 6px; }
     .feedback { background: #e0f7fa; }
     .hilfe { background: #fff3cd; }
@@ -17,48 +17,59 @@
   <script>
     function show(id, content, target) {
       const el = document.getElementById(target + "_" + id);
-      el.innerHTML = "Erklärung:<br>" + content.replace(/\n/g, "<br>");
+      el.innerHTML = content.replace(/\n/g, "<br>");
       el.style.display = "block";
     }
   </script>
 </head>
 <body>
 <div class="container">
-  <h1>Quiz – Kapitel 3: Licht und Atome</h1>
+  <h1>Quiz – Licht und Atome (Fragen 1 bis 4)</h1>
 
     <div class="task">
-      <strong>Frage 1:</strong> A1: Erkläre, warum manche Lichtquellen eine Folie zum Nachleuchten bringen und andere nicht.<br>
+      <strong>Frage 1:</strong><br>1. Gib mithilfe von Bild B3, Seite 71, den Farbbereich an, zu dem Photonen mit diesen Energiewerten gehören:<br>a) 2,45 eV<br>b) 3,8 eV<br>c) 0,652 eV<br>d) 1,29·10⁻¹⁹ J<br>e) 416·10⁻²¹ J<br>f) 312·10⁻¹⁷ mJ<br><br><img src='quiz_spektrum_streifen.jpg' alt='Spektrumsbild' style='max-width:100%; margin-top:10px;'><br>
       <textarea placeholder="Antwort eingeben..."></textarea><br>
-      <button onclick="show(1, `a) Rotlicht: zu geringe Energie – keine Anregung
-b) Sonnenlicht: hohe Photonenenergie – Anregung möglich
-c) UV-/Schwarzlicht: hohe Energie – Folie leuchtet nach
-d) Infrarot: zu geringe Energie – kein Nachleuchten
-e) Grüner Laser: je nach Wellenlänge möglich
-f) Roter Laser: wie a) – kein Nachleuchten`, 'feedback')">Lösung anzeigen</button>
-      <button onclick="show(1, `Das Nachleuchten hängt von der Photonenenergie ab: Nur energiereiches Licht (z. B. UV) kann Atome/Moleküle anregen.`, 'hilfe')">Hilfe anzeigen</button>
+      <button onclick="show(1, `a) 2,45 eV → grün
+b) 3,8 eV → ultraviolett
+c) 0,652 eV → infrarot
+d) 1,29·10⁻¹⁹ J ≈ 0,8 eV → infrarot
+e) 416·10⁻²¹ J = 0,416·10⁻¹⁸ J ≈ 0,26 eV → IR
+f) 312·10⁻¹⁷ mJ = 3,12·10⁻¹⁸ J ≈ 19,5 eV → UV`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(1, `Sieh dir den Spektralbereich in Bild B3 an: VIS liegt ca. bei 1,6–3,3 eV. UV ist darüber, IR darunter.`, 'hilfe')">Hilfe anzeigen</button>
       <div class="feedback" id="feedback_1"></div>
       <div class="hilfe" id="hilfe_1"></div>
     </div>
     
     <div class="task">
-      <strong>Frage 2:</strong> A2: Berechne die Energie eines Photons mit 3,77·10⁻¹⁹ J und gib den Energiebereich an.<br>
+      <strong>Frage 2:</strong><br>2. a) Erkläre, warum die Begriffe 'hochenergetisch' und 'niedrigenergetisch' doppeldeutig sind.<br>b) Wann wird UV-, VIS- oder IR-Strahlung gefährlich?<br>c) Warum ist UV-Licht besonders gefährlich?<br>
       <textarea placeholder="Antwort eingeben..."></textarea><br>
-      <button onclick="show(2, `E = 3,77·10⁻¹⁹ J
-eV = E / (1,6022·10⁻¹⁹ J) ≈ 2,35 eV
-→ sichtbares Licht`, 'feedback')">Lösung anzeigen</button>
-      <button onclick="show(2, `Um Joule in eV umzurechnen: 1 eV = 1,6022·10⁻¹⁹ J. Vergleich mit typischen Energien: IR < 1,8 eV < VIS < 3,3 eV < UV`, 'hilfe')">Hilfe anzeigen</button>
+      <button onclick="show(2, `a) Kann sich auf Frequenz oder biologische Wirkung beziehen.
+b) UV: Zellschäden/DNA; VIS: hohe Intensität auf Netzhaut; IR: Wärmebelastung, Verbrennung
+c) UV ist unsichtbar – Gefahr wird nicht wahrgenommen`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(2, `Strahlung wirkt je nach Energie unterschiedlich. Unsichtbare Strahlung wird oft unterschätzt.`, 'hilfe')">Hilfe anzeigen</button>
       <div class="feedback" id="feedback_2"></div>
       <div class="hilfe" id="hilfe_2"></div>
     </div>
     
     <div class="task">
-      <strong>Frage 3:</strong> A6: Wie viel Energie setzt ein Laser (0,75 mW) pro Sekunde um und wie viele Photonen sendet er aus?<br>
+      <strong>Frage 3:</strong><br>3. Ein fiktives Element emittiert Photonen mit 1,54 eV, 2,46 eV und 2,93 eV:<br>a) Zeichne ein Energieniveauschema.<br>b) Berechne alle möglichen Übergänge.<br>c) Erstelle ein Linienspektrum inkl. IR und UV-Bereichen.<br>
       <textarea placeholder="Antwort eingeben..."></textarea><br>
-      <button onclick="show(3, `Gegeben: P = 0,00075 W, Eph = 1,95 eV = 3,12·10⁻¹⁹ J
-E = P·t = 0,00075 W · 1 s = 0,00075 J
-Anzahl Photonen: N = E / Eph = 0,00075 J / 3,12·10⁻¹⁹ J ≈ 2,4·10¹⁵ Photonen`, 'feedback')">Lösung anzeigen</button>
-      <button onclick="show(3, `Laserleistung mal Zeit ergibt die gesamte Energie. Diese durch die Photonenergie teilen ergibt die Anzahl Photonen.`, 'hilfe')">Hilfe anzeigen</button>
+      <button onclick="show(3, `a) Niveaus: 0 eV, 1,54 eV, 2,46 eV, 2,93 eV
+b) ΔE: 2,93–2,46 = 0,47; 2,93–1,54 = 1,39; 2,46–1,54 = 0,92 eV
+c) Linienspektrum: 0,47 (IR), 0,92 (VIS), 1,39 (VIS)`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(3, `Für ein Linienspektrum: alle möglichen Übergänge berechnen, dann Energien den Farbbereichen zuordnen.`, 'hilfe')">Hilfe anzeigen</button>
       <div class="feedback" id="feedback_3"></div>
       <div class="hilfe" id="hilfe_3"></div>
+    </div>
+    
+    <div class="task">
+      <strong>Frage 4:</strong><br>4. Eine Flamme wird mit Cäsiumsalz gefärbt:<br>a) Erkläre die Farbentstehung.<br>b) Beschreibe den Versuch mit Spektrallampe.<br>c) Wie kann man das Absorptionsspektrum sichtbar machen?<br>
+      <textarea placeholder="Antwort eingeben..."></textarea><br>
+      <button onclick="show(4, `a) Elektronen angeregt → Rückfall → Lichtemission
+b) Flamme leuchtet – Spektrallinien sichtbar, wenn Cäsium angeregt wird
+c) Weißes Licht durch Flamme → Absorptionslinien entstehen`, 'feedback')">Lösung anzeigen</button>
+      <button onclick="show(4, `Emission entsteht durch Elektronenrücksprung. Absorption durch Lichtaufnahme bei spezifischen Energien.`, 'hilfe')">Hilfe anzeigen</button>
+      <div class="feedback" id="feedback_4"></div>
+      <div class="hilfe" id="hilfe_4"></div>
     </div>
     </div></body></html>
